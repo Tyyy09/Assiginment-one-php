@@ -43,27 +43,32 @@ if (!empty($api->breeds)) {
 <main>
     <?php if (isset($errorMessage)): ?>
      <!-- show the error message If there was an error with the API -->
-    <p><?= htmlspecialchars($errorMessage) ?></p>
+    <p><?php echo htmlspecialchars($errorMessage) ?></p>
     <?php else: ?>
     <form method="get">
         <label for="breed_selector">Select Breed:</label>
+
         <!--  Put onchange for make the random name of the form of names  -->
         <select name="breed" id="breed_selector" onchange="this.form.submit()">
             <option class="chooseMeow" value=""> Choose Meow </option>
+
             <?php foreach ($api->breeds as $index => $b): ?>
-                <option value="<?= $index ?>" <?= (isset($_GET['breed']) && $_GET['breed'] == $index) ? 'selected' : '' ?>>
-                    <?= htmlspecialchars($b['name']) ?>
+                <option value="<?php echo $index ?>"
+                <php echo (isset($_GET['breed']) && $_GET['breed'] == $index) ? 'selected' : '' ?>>
+                    <?php echo htmlspecialchars($b['name']) ?>
                 </option>
             <?php endforeach; ?>
         </select>
+
         <button type="submit" name="random" value="1">Random Meow</button>
+
     </form>
     <!-- if user choose a breed, It will show the cat image-->
         <?php if ($breed): ?>
             <div class="api-card">
-                <img src="<?= htmlspecialchars($breed['image']['url']) ?>"
-                     alt="<?= htmlspecialchars($breed['name']) ?>" id="breed_image">
-                <p id="breed_json"><strong>Temperament:</strong> <?= htmlspecialchars($breed['temperament']) ?></p>
+                <img src="<?php echo htmlspecialchars($breed['image']['url']) ?>"
+                     alt="<?php echo htmlspecialchars($breed['name']) ?>" id="breed_image">
+                <p id="breed_json"><strong>Temperament:</strong> <?php echo htmlspecialchars($breed['temperament']) ?></p>
             </div>
         <?php else: ?>
             <p>No breed data available.</p>
