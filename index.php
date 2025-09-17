@@ -76,5 +76,10 @@ if (!empty($api->breeds)) {
         <?php endif; ?>
     <?php endif; ?>
 </main>
+<footer>
+    <div class="footer">
+    <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+    </div>
+</footer>
 </body>
 </html>

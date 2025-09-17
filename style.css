@@ -110,3 +110,12 @@ button:hover {
 .api-card p {
     margin: 0.5rem 0;
 }
+.footer {
+    background-color: #344e41;
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+}
+.footer h5 {
+    color: var(--color-header-text);
+}
