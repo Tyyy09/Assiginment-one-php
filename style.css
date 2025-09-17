@@ -1,0 +1,112 @@
+/* ==========================
+   Cat Breeds Styles
+   ========================== */
+
+/* Root variables */
+:root {
+    --color-bg: #dad7cd;
+    --color-header-bg: #588157;
+    --color-header-text: #fff;
+    --color-text: #0F0F0F;
+    --color-accent: #588157;
+    --color-card-bg: #a3b18a;
+    --color-card-border: #a3b18a;
+    --color-button-hover: #344e41;
+    --font-primary: 'Poppins',sans-serif;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+select {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-card-border);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);;
+}
+
+/* Breed card */
+.api-card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.api-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.api-card p {
+    margin: 0.5rem 0;
+}
