@@ -58,7 +58,7 @@ if (!empty($api->breeds)) {
         </select>
         <button type="submit" name="random" value="1">Random Meow</button>
     </form>
-    <!-- if user choose a breed, It will show the cat image and a link to see more detail in Wikipedia-->
+    <!-- if user choose a breed, It will show the cat image-->
         <?php if ($breed): ?>
             <div class="api-card">
                 <img src="<?= htmlspecialchars($breed['image']['url']) ?>"
