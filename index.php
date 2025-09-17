@@ -64,6 +64,7 @@ if (!empty($api->breeds)) {
 
     </form>
     <!-- if user choose a breed, It will show the cat image-->
+    <!-- use htmlspecialchars for avoid the specail charactor in breeds name-->
         <?php if ($breed): ?>
             <div class="api-card">
                 <img src="<?php echo htmlspecialchars($breed['image']['url']) ?>"
