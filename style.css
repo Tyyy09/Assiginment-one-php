@@ -1,4 +1,6 @@
-
+/* ==========================
+   Cat Breeds Styles
+   ========================== */
 
 /* Root variables */
 :root {
@@ -108,4 +110,3 @@ button:hover {
 .api-card p {
     margin: 0.5rem 0;
 }
-

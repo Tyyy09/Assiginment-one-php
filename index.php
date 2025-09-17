@@ -27,8 +27,10 @@ if (!empty($api->breeds)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CatApi">
+    <meta name="robots" content="noindex, nofollow">
     <title>Cat Breeds</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -56,7 +58,7 @@ if (!empty($api->breeds)) {
         </select>
         <button type="submit" name="random" value="1">Random Meow</button>
     </form>
-    <!-- if user choose a breed, It will show the cat image-->
+    <!-- if user choose a breed, It will show the cat image and a link to see more detail in Wikipedia-->
         <?php if ($breed): ?>
             <div class="api-card">
                 <img src="<?= htmlspecialchars($breed['image']['url']) ?>"
@@ -70,4 +72,3 @@ if (!empty($api->breeds)) {
 </main>
 </body>
 </html>
-
